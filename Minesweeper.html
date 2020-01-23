@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</head>
+
+<body>
+
+
+
+    <!--implementation-->
+    <div class="MineContainer">
+        <!-- header-->
+        <h1>
+            Minesweeper
+        </h1>
+
+        width (between 8 and 40):
+        <input type="number" class="width" max="40" min="8" ><br>
+
+        height (between 8 and 30):
+        <input type="number" class="height" min="8" max="30"><br>
+
+        mines:
+        <input type="number" class="mines" min="1" ><br>
+
+        <button class="change">Change Level</button>
+
+        <button class="newgame">New Game</button><br>
+
+        <span>Time: </span>
+        <span class="time">0</span>
+        <span> seconds</span>
+        <span>Bombs: </span>
+        <span class="Bnum">6</span>
+        <br>
+        <table class="boardtable">
+            <tbody class="board">
+            </tbody>
+        </table>
+    </div>
+    <!-- high score board -->
+    <div class="scoreboard">
+        <h3>High Score Rank</h3>
+        <table class="rank">
+            <thead>
+                <tr>
+                    <th>rank</th>
+                    <th>time (seconds)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="10000">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="20000">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="30000">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="40000">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="50000">
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
